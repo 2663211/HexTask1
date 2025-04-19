@@ -16,6 +16,7 @@ function AddTask(){
     inputBox.value="";
     saveData();
 }
+window.AddTask = AddTask;
 module.exports = AddTask
 /*checks if the element clicked on is a list or a span */
 listContainer.addEventListener("click", function(e){
