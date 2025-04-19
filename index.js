@@ -1,6 +1,6 @@
 const inputBox=document.getElementById("input-box");
 const listContainer=document.getElementById("list-container");
-function addTask(){
+function AddTask(){
     if(inputBox.value===''){
         alert("You must write something");
     }
@@ -16,6 +16,7 @@ function addTask(){
     inputBox.value="";
     saveData();
 }
+module.exports = AddTask
 /*checks if the element clicked on is a list or a span */
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName==="LI"){
